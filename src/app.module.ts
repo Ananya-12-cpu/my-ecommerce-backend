@@ -6,6 +6,7 @@ import { DatabaseModule } from './database/database.module.js';
 import { ProductsModule } from './products/products.module.js';
 import { CategoriesModule } from './categories/categories.module.js';
 import { CartModule } from './cart/cart.module.js';
+import { OrdersModule } from './orders/orders.module.js';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { CartModule } from './cart/cart.module.js';
     ProductsModule,
     CategoriesModule,
     CartModule,
+    OrdersModule,
   ],
   controllers: [AppController],
   providers: [AppService],

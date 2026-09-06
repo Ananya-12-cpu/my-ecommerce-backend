@@ -7,11 +7,12 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('My Ecommerce Backend API')
-    .setDescription('API documentation for the products, categories and cart modules')
+    .setDescription('API documentation for the products, categories, cart and orders modules')
     .setVersion('1.0')
     .addTag('categories')
     .addTag('products')
     .addTag('carts')
+    .addTag('orders')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api-docs', app, document);
